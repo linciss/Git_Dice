@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    Random rand = new Random();
+    public static Random rand = new Random();
     static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -15,7 +15,6 @@ public class Main {
     }
 
     static void throwDice(int times){
-        Random rand = new Random();
         for(int i =0; i<times;i++)
             System.out.print(rand.nextInt(6)+1+" ");
     }
