@@ -15,8 +15,16 @@ public class Main {
     }
 
     static void throwDice(int times){
-        for(int i =0; i<times;i++)
-            System.out.print(rand.nextInt(6)+1+" ");
+        int biggestNum=0, num= 0;
+        for(int i =0; i<times;i++){
+            num = rand.nextInt(6)+1;
+            System.out.print(num + " ");
+        if(biggestNum < num){
+            biggestNum = num;
+        }
+        }
+
+        System.out.println("The biggest number is: " + biggestNum);
     }
 
 }
