@@ -12,9 +12,11 @@ public class Main {
 
 			switch(choice){
 				case 1:
-					do{ System.out.println("Please input the times you want to throw the dice");
+					do{
+						System.out.println("Please input the times you want to throw the dice");
 						times = scan.nextInt();
 					}while(times<1);
+					throwDice(times);
 					break;
 				case 2:
 					System.out.println("Program stopped");
@@ -22,7 +24,7 @@ public class Main {
 			}
 		}while(choice!=2);
 
-		throwDice(times);
+
 		scan.close();
 	} 
 	
