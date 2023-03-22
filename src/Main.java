@@ -27,7 +27,11 @@ public class Main {
 	} 
 	
 	
-	static void throwDice(int times){
-		for(int i =0; i<times;i++) 
-			System.out.print(rand.nextInt(6)+1+" "); }
+	static int[] throwDice(int times){
+		int[] dice = new int[times];
+
+		for(int i =0; i<times;i++) {
+			dice[i] = rand.nextInt(6) + 1;
+		}
+		return dice;
 	}
