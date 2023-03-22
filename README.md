@@ -5,6 +5,6 @@
 ### **TODO**
 - [x] Initiated version control
 - [ ] Print "Hello World!"
-- [ ] Made a new branch
+- [x] Made a new branch
 - [ ] Shared the project
 - [ ] Merged branches
